@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>curriculo1.2</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Videos sobre mim</h1>
+        <div class="row">
+            <div class="col">
+                <div class="feature-img">
+                    <img src="https://img.freepik.com/fotos-gratis/mulher-feliz-pos-graduacao-em-manto-regozijando-se-rindo-sorrindo_176420-14226.jpg?w=2000" alt="pessoa graduando" width="100%">
+                    <img src="https://cdn-icons-png.flaticon.com/512/98/98690.png" class="btn-play" onclick="playVideo('florvid.mp4')">
+                </div>
+            </div>
+            <div class="col">
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="https://www.motor24.pt/files/2019/10/shutterstock_754381228.jpg" >
+                        <img src="https://cdn-icons-png.flaticon.com/512/98/98690.png" class="btn-play" onclick="playVideo('florvid.mp4')">
+                    </div>  
+                    <p>Viagens pelo mundo</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="https://metodosupera.com.br/wp-content/uploads/2021/10/Dia-da-leitura-o-que-acontece-no-seu-cerebro-quando-voce-le-um-livro_SUPERA-Ginastica-para-o-cerebro-1.jpg" >
+                        <img src="https://cdn-icons-png.flaticon.com/512/98/98690.png" class="btn-play" onclick="playVideo('florvid.mp4')">
+                    </div>  
+                    <p>Hoobies</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="https://meuroteirordc.com.br/wp-content/uploads/2020/12/iStock-1183947622.jpg" >
+                        <img src="https://cdn-icons-png.flaticon.com/512/98/98690.png" class="btn-play" onclick="playVideo('florvid.mp4')">
+                    </div>  
+                    <p>sei la</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="video-player" id="videoplayer">
+        <video src="graduationvideo.mp4" width="100%" controls autoplay id="myVideo"></video>
+        <img src="https://cdn4.iconfinder.com/data/icons/media-controls-4/100/close-512.png" class="close-btn" onclick="stopVideo()">
+    </div>
+
+    <script>
+        var videoplayer = document.getElementById("videoplayer");
+        var myVideo = document.getElementById("video-player");
+
+        function stopVideo(){
+            videoplayer .style.display = "none";
+        }
+
+        function playVideo(file){
+            myVideo.src = file;
+            videoplayer.style.display = "block";
+
+        }
+
+
+    </script>
+    <a href="CURRICULO/index.html">voltar</a>
+    
+</body>
+</html>
